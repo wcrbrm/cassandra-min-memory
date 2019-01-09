@@ -3,8 +3,8 @@ services:
   min-cassandra:
     image: cassandra:latest
     volumes:
-      - ${PWD}/etc/cassandra.yaml:/etc/cassandra/cassandra.yaml
-      - ${PWD}/etc/cassandra-env.sh:/etc/cassandra/cassandra-env.sh
+      - ./etc/cassandra.yaml:/etc/cassandra/cassandra.yaml
+      - ./etc/cassandra-env.sh:/etc/cassandra/cassandra-env.sh
     ports:
       - '7000:7000'
       - '7001:7001'
